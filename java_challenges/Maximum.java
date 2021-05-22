@@ -7,6 +7,7 @@ class Maximum {
       Integer[] numList = {1, 2, 3, 12, 4, 5};
       Integer max = maximum(numList);
       printNumberInWord(6);
+      checkOddEven(max);
   }
 
   public static Integer maximum(Integer[] numList) {
@@ -52,4 +53,14 @@ class Maximum {
 		        System.out.println(">10");
 	}
   }
+
+  public static void checkOddEven (int num){
+	if (num % 2 == 0){
+		System.out.println("Even Number");
+	}
+	else{
+		System.out.println("Odd Number");
+	}
+ }
+
 }
