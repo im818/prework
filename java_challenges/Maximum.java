@@ -8,7 +8,9 @@ class Maximum {
       Integer max = maximum(numList);
       printNumberInWord(6);
       checkOddEven(max);
-  }
+      double avg = average(numList);
+      System.out.println(avg);  
+}
 
   public static Integer maximum(Integer[] numList) {
       Integer currentMax = 0;
@@ -62,5 +64,15 @@ class Maximum {
 		System.out.println("Odd Number");
 	}
  }
+
+  public static double average(Integer[] numList){
+	int totalSum = 0;
+	int length = numList.length;
+	for (int i = 0; i < length; i++){
+		totalSum += numList[i];
+	}
+	return totalSum/length;
+  }
+
 
 }
